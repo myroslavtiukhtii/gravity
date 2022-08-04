@@ -234,7 +234,7 @@ table {
     flex-direction: row-reverse;
   }
   .main img {
-    content: url(/img/img-main.png);
+    content: url(./img/img-main.png);
     margin-bottom: 0;
   }
   .main h2 {
