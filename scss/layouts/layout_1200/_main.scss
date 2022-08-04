@@ -7,8 +7,15 @@
     flex-direction: row-reverse;
 }
 
-.main img {
-   content: url(./img/img-main.png); 
+.main .one-pic {
+    display: none;
+}
+
+.main .two-pic {
+    display: block;
+}
+
+.intro .main img {
    margin-bottom: 0;
 }
 
