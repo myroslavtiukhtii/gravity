@@ -1,0 +1,35 @@
+/*Fonts*/
+
+$baseFontSize: 16px;
+
+@font-face {
+    font-family: 'SF pro Display';
+    src: url('../fonts/sfprodisplay/sfprodisplay-regular-webfont.woff2') format('woff2'),
+        url('../fonts/sfprodisplay/sfprodisplay-regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/sfprodisplay/sfprodisplay-medium-webfont.woff2') format('woff2'),
+        url('../fonts/sfprodisplay/sfprodisplay-medium-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/sfprodisplay/sfprodisplay-bold-webfont.woff2') format('woff2'),
+    url('../fonts/sfprodisplay/sfprodisplay-bold-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*Colors*/
+
+$colorLime: #71A89E;
+$colorDark: #22322F;
+$colorMenuDark: #303031;
+

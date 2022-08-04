@@ -1,0 +1,22 @@
+.container__button-access {
+    padding-bottom: 98px;
+}
+
+.container__button-access button {
+    width: 203px;
+    height: 44px;
+    background-color: $colorLime;
+    border: 2px solid #000;
+    border-radius: 8px;
+    border-width: 2px 4px 4px 2px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

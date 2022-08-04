@@ -1,0 +1,45 @@
+.menu ul {
+    display: block;
+}
+
+.button {
+    display: none;
+}
+
+.main-header img {
+    max-width: 138px;
+    max-height: 43px;
+}
+
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul li {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    margin-right: 40px;
+
+    a {
+        text-decoration: none;
+        color: $colorMenuDark;
+    }
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-header {
+    margin-bottom: 97px;
+}
+
+.active {
+    color: $colorLime;
+}
+

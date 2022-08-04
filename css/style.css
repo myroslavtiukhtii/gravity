@@ -1,0 +1,263 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} /*Fonts*/
+@font-face {
+  font-family: "SF pro Display";
+  src: url("../fonts/sfprodisplay/sfprodisplay-regular-webfont.woff2") format("woff2"), url("../fonts/sfprodisplay/sfprodisplay-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sfprodisplay/sfprodisplay-medium-webfont.woff2") format("woff2"), url("../fonts/sfprodisplay/sfprodisplay-medium-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/sfprodisplay/sfprodisplay-bold-webfont.woff2") format("woff2"), url("../fonts/sfprodisplay/sfprodisplay-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+/*Colors*/
+* {
+  font-size: #22322F;
+  font-weight: 400;
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  padding-top: 60px;
+  min-height: 39px;
+  margin-bottom: 50px;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu ul {
+  display: none;
+}
+
+.main-header img {
+  max-width: 79px;
+  max-height: 25px;
+}
+
+.button {
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  border-width: 1px 3px 3px 1px;
+  border-style: solid;
+  border-color: #22322F;
+  font-weight: 700;
+  font-size: 12px;
+  min-height: 39px;
+  min-width: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button .icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+}
+
+.intro .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main img {
+  margin-bottom: 48px;
+}
+
+.container__main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container__main-title h2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 43px;
+  color: #22322F;
+}
+.container__main-title p {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #22322F;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+}
+
+.container__button-access {
+  padding-bottom: 98px;
+}
+
+.container__button-access button {
+  width: 203px;
+  height: 44px;
+  background-color: #71A89E;
+  border: 2px solid #000;
+  border-radius: 8px;
+  border-width: 2px 4px 4px 2px;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+  .menu ul {
+    display: block;
+  }
+  .button {
+    display: none;
+  }
+  .main-header img {
+    max-width: 138px;
+    max-height: 43px;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu ul li {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    margin-right: 40px;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: #303031;
+  }
+  .menu ul li:last-child {
+    margin-right: 0;
+  }
+  .main-header {
+    margin-bottom: 97px;
+  }
+  .active {
+    color: #71A89E;
+  }
+  .intro {
+    padding-bottom: 154px;
+  }
+  .intro .main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main img {
+    content: url(/img/img-main.png);
+    margin-bottom: 0;
+  }
+  .main h2 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: #22322F;
+  }
+  .left-side p {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #22322F;
+  }
+  .left-side {
+    width: 100%;
+    margin-top: 154px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+.intro .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main img {
+    margin-bottom: 48px;
+}
+
+.container__main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+h2 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 43px;
+    color: $colorDark;
+}
+
+p {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: $colorDark;
+    margin-bottom: 24px;
+}
+
+}
+
+.subtitle {
+    margin-bottom: 16px;
+}
+
+
+
+

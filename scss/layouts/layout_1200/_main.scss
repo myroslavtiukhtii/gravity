@@ -1,0 +1,39 @@
+.intro {
+    padding-bottom: 154px;
+}
+
+.intro .main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main img {
+   content: url(/img/img-main.png); 
+   margin-bottom: 0;
+}
+
+.main h2 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    color: $colorDark;
+}
+
+
+.left-side p {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: $colorDark;
+}
+
+.left-side {
+    width: 100%;
+    margin-top: 154px;
+}
+
