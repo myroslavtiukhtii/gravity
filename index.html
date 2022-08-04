@@ -32,8 +32,11 @@
             <h1 class="visually-hidden">Time tracking</h1>
             <div class="container">
                 <div class="main">
-                    <img class="one-pic" src="./img/img-mobile.png" alt="A man">
-                    <img class="two-pic" src="./img/img-main.png" alt="A man">
+                    <picture class="img">
+                        <source media="(max-width:465px)" srcset="img/img-mobile.png">
+                        <source media="(min-width:650px)" srcset="img/img-main.png">
+                        <img src="img/img-main.png" alt="A man">
+                    </picture>
                     <div class="left-side">
                         <div class="container__main-title">
                             <h2>Simple time tracking.</h2>

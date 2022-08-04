@@ -130,12 +130,8 @@ table {
   justify-content: center;
 }
 
-.main .two-pic {
-  display: none;
-}
-
-.main img {
-  margin-bottom: 48px;
+.left-side {
+  margin-top: 48px;
 }
 
 .container__main-title {
@@ -236,15 +232,6 @@ table {
   .intro .main {
     display: flex;
     flex-direction: row-reverse;
-  }
-  .main .one-pic {
-    display: none;
-  }
-  .main .two-pic {
-    display: block;
-  }
-  .intro .main img {
-    margin-bottom: 0;
   }
   .main h2 {
     font-family: "SF Pro Display";
