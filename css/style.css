@@ -60,9 +60,9 @@ table {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 15px;
 }
 
 .no-scroll {
@@ -81,7 +81,7 @@ table {
 }
 
 .main-header {
-  padding-top: 60px;
+  padding-top: 30px;
   min-height: 39px;
   margin-bottom: 50px;
 }
@@ -93,15 +93,52 @@ table {
   align-items: center;
 }
 
-.menu ul {
-  display: none;
-}
-
 .main-header img {
   max-width: 79px;
   max-height: 25px;
+  -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+/**
+ * ----------------------------------------
+ * animation focus-in-contract-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 .button {
   background-color: #F9F9F9;
   border-radius: 8px;
@@ -116,6 +153,12 @@ table {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 999;
+}
+
+.button:hover {
+  background-color: #71A89E;
+  color: #F9F9F9;
 }
 
 .button .icon {
@@ -130,6 +173,42 @@ table {
   justify-content: center;
 }
 
+.intro .picture img {
+  width: 100%;
+  height: auto;
+  -webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-hor-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 .left-side {
   margin-top: 48px;
 }
@@ -185,17 +264,82 @@ table {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    min-width: 1440px;
-    margin: 0 auto;
-    padding: 0 120px;
+.container__button-access button:hover {
+  background-color: #fff;
+  color: #71A89E;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  padding-top: 80px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #71A89E;
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+.menu ul a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu ul a:hover {
+  color: black;
+}
+.menu ul li {
+  margin-bottom: 25px;
+}
+.menu .menu-list {
+  display: none;
+}
+.menu .menu-list.active {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro .main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  .menu ul {
-    display: block;
+}
+@media only screen and (min-width: 1170px) {
+  .container {
+    min-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   .button {
     display: none;
+  }
+  .menu .menu-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding-top: 0;
+  }
+  .menu .menu-list li {
+    margin: 0;
+    margin-right: 40px;
+  }
+  .menu .menu-list li:hover a {
+    color: #71A89E;
   }
   .main-header img {
     max-width: 138px;
@@ -211,7 +355,6 @@ table {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
-    margin-right: 40px;
   }
   .menu ul li a {
     text-decoration: none;
@@ -232,6 +375,12 @@ table {
   .intro .main {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .intro .picture img {
+    width: unset;
+    max-width: 617px;
+    height: unset;
   }
   .main h2 {
     font-family: "SF Pro Display";
@@ -253,6 +402,7 @@ table {
   .left-side {
     width: 100%;
     margin-top: 154px;
+    margin-right: 32px;
   }
 }
 

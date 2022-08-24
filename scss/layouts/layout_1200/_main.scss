@@ -5,7 +5,15 @@
 .intro .main {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: nowrap;
 }
+
+.intro .picture img {
+    width: unset;
+    max-width: 617px;
+    height: unset;
+}
+
 
 .main h2 {
     font-family: 'SF Pro Display';
@@ -30,6 +38,8 @@
 .left-side {
     width: 100%;
     margin-top: 154px;
+    margin-right: 32px;
     
 }
+
 

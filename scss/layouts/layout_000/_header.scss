@@ -1,5 +1,5 @@
 .main-header {
-    padding-top: 60px;
+    padding-top: 30px;
     min-height: 39px;
     margin-bottom: 50px;
 }
@@ -11,14 +11,52 @@
     align-items: center;
 }
 
-.menu ul {
-    display: none;
-}
-
 .main-header img {
     max-width: 79px;
     max-height: 25px;
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+/**
+ * ----------------------------------------
+ * animation focus-in-contract-bck
+ * ----------------------------------------
+ */
+ @-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
 
 .button {
     background-color: #F9F9F9;
@@ -34,7 +72,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-} 
+    z-index: 999;
+}
+
+.button:hover {
+    background-color: $colorLime;
+    color: #F9F9F9;
+}
 
 .button .icon {
     width: 12px;

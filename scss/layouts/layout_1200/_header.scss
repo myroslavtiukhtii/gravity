@@ -1,9 +1,27 @@
-.menu ul {
-    display: block;
-}
 
 .button {
     display: none;
+}
+
+.menu .menu-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding-top: 0;
+
+    li {
+        margin: 0;
+        margin-right: 40px;
+    }
+
+    li:hover a {
+        color: $colorLime;
+    }
 }
 
 .main-header img {
@@ -17,13 +35,13 @@
     flex-direction: row;
 }
 
+
 .menu ul li {
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
-    margin-right: 40px;
 
     a {
         text-decoration: none;

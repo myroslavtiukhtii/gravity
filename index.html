@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Time tracking</title>
+    <meta name="title" content="Time tracking">
+    <meta name="description" content="Turn your team on to productivity with Gravity the time tracker!">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Time tracking">
+    <meta property="og:description" content="Turn your team on to productivity with Gravity the time tracker!">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Time tracking">
+    <meta property="twitter:description" content="Turn your team on to productivity with Gravity the time tracker!">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_package_v0.16/favicon-16x16.png">
     <title>Document</title>
 </head>
 <body>
+    <h1 class="visually-hidden">Time tracking</h1>
+    <h2 class="visually-hidden">Time tracking</h2>
     <header class="main-header">
         <div class="container">
-            <img src="./img/gravity-logo.png" alt="Gravity logo" width="138" height="43">
+            <a href="#">
+                <img src="./img/gravity-logo.png" alt="Gravity logo" width="138" height="43">
+            </a>
             <nav class="menu">
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Why Gravity</a></li>
-                    <li class="active"><a href="#">Sign In</a></li>
-                </ul>
+                <h3 class="visually-hidden">Time tracking</h3>
+                    <ul class="menu-list">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Why Gravity</a></li>
+                        <li class="active"><a href="#">Sign In</a></li>
+                    </ul>
             </nav>
             <button class="button">
-                <svg class="icon">
-                    <use xlink:href="./img/sprite.svg#icon-menu"></use>
-                </svg>
-                Menu
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#icon-menu"></use>
+                    </svg>
+                    Menu
             </button>
         </div>
     </header>
     <main>
         <section class="intro">
-            <h1 class="visually-hidden">Time tracking</h1>
+            <h2 class="visually-hidden">Time tracking</h2>
             <div class="container">
                 <div class="main">
-                    <picture class="img">
-                        <source media="(max-width:465px)" srcset="img/img-mobile.png">
-                        <source media="(min-width:650px)" srcset="img/img-main.png">
-                        <img src="img/img-main.png" alt="A man">
-                    </picture>
+                    <div class="picture">
+                        <picture class="img">
+                            <source media="(max-width:465px)" srcset="img/img-mobile.png">
+                            <img src="img/img-main.png" alt="A man">
+                        </picture>
+                    </div>
                     <div class="left-side">
                         <div class="container__main-title">
                             <h2>Simple time tracking.</h2>
@@ -44,12 +69,20 @@
                             <p>Turn your team on to productivity with Gravity the time tracker.</p>
                         </div>
                         <div class="container__button-access">
-                            <button>Request early access</button>
+                            <button class="request">Request early access</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        const hamburger = document.querySelector('.button');
+        const menu = document.querySelector('.menu-list');
+        hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>

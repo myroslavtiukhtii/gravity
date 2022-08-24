@@ -1,0 +1,44 @@
+.menu {
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        padding-top: 80px;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: $colorLime;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+    
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        li {
+            margin-bottom: 25px;
+        }
+
+    }
+
+    .menu-list {
+        display: none;
+      }
+    
+    .menu-list.active {
+        display: flex;
+    }
+
+}
